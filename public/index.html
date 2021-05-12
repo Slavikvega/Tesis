@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dueños del internet</title>
+    <link rel="stylesheet" href="css/98.css" />
+      <link rel="stylesheet" href="css/estilos.css" />
+
+    <!--<link rel="stylesheet" href="css/general.css">-->
+  <!--  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script src="js/sketch01.js"></script>
+  -->
+</head>
+
+<body>
+  <img src="anuncios/anu_02.png" class="js--anuncios anuncios" id="anu00" data-window="a0">
+  <img src="anuncios/anu_03.png" class="js--anuncios anuncios" id="anu01" data-window="a2">
+  <img src="anuncios/anu_04.png" class="js--anuncios anuncios" id="anu02" data-window="a4">
+  <img src="anuncios/anu_05.gif" class="js--anuncios anuncios" id="anu03" data-window="a6">
+  <img src="anuncios/anu_06.png" class="js--anuncios anuncios" id="anu04" data-window="a8">
+
+<script src="/socket.io/socket.io.js"></script>
+  	<div class="js--lightwindow lightwindow visible" data-window="wintro">
+  			<div class="window">
+  			  <div class="title-bar">
+  			    <div class="title-bar-text">Dueños del internet - Slavik Vega</div>
+  			    <div class="title-bar-controls">
+  			       <button aria-label="Help"></button>
+  			      <button class= "js--close--button" aria-label="Close"></button>
+  			    </div>
+  			  </div>
+  			  <div class="window-body">
+  			    <p>¡Bienvenido! La siguiente experiencia interactiva fue desarrollada como reflexión hacia la privacidad digital y las decisiones que USTED toma en línea. <br/>
+  						<br/>
+  							Al participar en esta dinámica usted otorga permiso de la recolección de datos personales para su uso y almacenamiento. <br/>
+  						<br/>
+  							Gracias.<br/>
+  						<br/>
+  							-AV
+  						<br/>
+  						<br/>
+  						<br/>
+  					</p>
+  						<button class="js--btn--intro">OK</button>
+  	  		</div>
+  		</div>
+  	</div>
+
+  	<div class="js--lightwindow lightwindow" data-window="wux">
+
+  			<div class="window" >
+  					<div class="title-bar">
+  						<div class="title-bar-text">Dueños del internet</div>
+  						<div class="title-bar-controls">
+  							 <button aria-label="Help"></button>
+  							<button class= "js--close--button" aria-label="Close"></button>
+  						</div>
+  					</div>
+  					<div class="window-body" id='js--ux'>
+              <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+              <script src="js/sketch01.js"></script>
+  					</div>
+
+  				</div>
+
+  	</div>
+
+  	<div class="js--lightwindow lightwindow" data-window="w0">
+  		<div class="window w2" >
+  		  <div class="title-bar">
+  		    <div class="title-bar-text">¡Atención!</div>
+  		    <div class="title-bar-controls">
+  		       <button aria-label="Help"></button>
+  		      <button class= "js--close--button" aria-label="Close"></button>
+  		    </div>
+  		  </div>
+  		  <div class="window-body">
+  		    <p>¡Atención! para continuar participando en la instalación es necesario responder la siguiente pregunta: <br/>
+  					<br/>
+  						¿Qué edad tienes?<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  					<div class="field-row" style="width: 300px">
+  						<label for="range22">Edad: <span class="js--value01"> </span></label>
+  					</div>
+            <div class="field-row ranges" style="width: 300px">
+  						<label for="range22">16</label>
+  							<input id="range22" type="range" min="16" max="90" value="21" />
+  						<label for="range22">90</label>
+  					</div>
+  					<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  				</p>
+
+  							<button class="js--ux--button js--button--01" disabled >OK</button> <button class="canc--button">Cancelar</button>
+  		  </div>
+  		</div>
+  	</div>
+
+  	<div class="js--lightwindow lightwindow" data-window="w1">
+  		<div class="window w2" >
+  			<div class="title-bar">
+  				<div class="title-bar-text">¡Atención!</div>
+  				<div class="title-bar-controls">
+  					 <button aria-label="Help"></button>
+  					<button class= "js--close--button" aria-label="Close"></button>
+  				</div>
+  			</div>
+  			<div class="window-body">
+  				<p>¡Atención! para continuar participando en la instalación es necesario responder la siguiente pregunta: <br/>
+  					<br/>
+  						¿Dónde estudiaste?<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  					<div class="field-row">
+  					  <label for="text17">Institución:</label>
+
+  					</div>
+            <div class="field-row texts">
+
+  					  <input id="text17" type="text" />
+  					</div>
+  					<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  				</p>
+
+  							<button class="js--ux--button js--button--01" disabled >OK</button><button class="canc--button">Cancelar</button>
+  			</div>
+  		</div>
+  	</div>
+
+  <div class="js--lightwindow lightwindow" data-window="w2">
+  		<div class="window w2" >
+  			<div class="title-bar">
+  				<div class="title-bar-text">¡Atención!</div>
+  				<div class="title-bar-controls">
+  					 <button aria-label="Help"></button>
+  					<button class= "js--close--button js--button--01" aria-label="Close"></button>
+  				</div>
+  			</div>
+  			<div class="window-body">
+  				<p>¡Atención! para continuar participando en la instalación es necesario responder la siguiente pregunta: <br/>
+  					<br/>
+  						¿Tienes mascotas?<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  					<div class="field-row">
+  					  <input id="radio3" type="radio" name="first-example">
+  					  <label for="radio3">Si</label>
+  					</div>
+            <br/>
+  					<div class="field-row">
+  					  <input id="radio4" type="radio" name="first-example">
+  					  <label for="radio4">No</label>
+  					</div>
+  					<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  				</p>
+
+  							<button class="js--ux--button js--button--01" disabled>OK</button><button class="canc--button">Cancelar</button>
+  			</div>
+  		</div>
+  </div>
+
+  <div class="js--lightwindow lightwindow" data-window="w3">
+  		<div class="window w2" >
+  			<div class="title-bar">
+  				<div class="title-bar-text">¡Atención!</div>
+  				<div class="title-bar-controls">
+  					 <button aria-label="Help"></button>
+  					<button class= "js--close--button" aria-label="Close"></button>
+  				</div>
+  			</div>
+  			<div class="window-body">
+  				<p>¡Atención! para continuar participando en la instalación es necesario responder la siguiente pregunta: <br/>
+  					<br/>
+  						¿Cuál es el nombre de tu mamá?<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  					<div class="field-row">
+  						<label for="text18">Nombre:</label>
+  					</div>
+            <div class="field-row">
+  						<input id="text18" type="text" />
+  					</div>
+  					<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  				</p>
+
+  							<button class="js--ux--button js--button--01" disabled>OK</button><button class="canc--button">Cancelar</button>
+  			</div>
+  		</div>
+  </div>
+
+  <div class="js--lightwindow lightwindow" data-window="w4">
+  		<div class="window w2" >
+  			<div class="title-bar">
+  				<div class="title-bar-text">¡Atención!</div>
+  				<div class="title-bar-controls">
+  					 <button aria-label="Help"></button>
+  					<button class= "js--close--button" aria-label="Close"></button>
+  				</div>
+  			</div>
+  			<div class="window-body">
+  				<p>¡Atención! para continuar participando en la instalación es necesario responder la siguiente pregunta: <br/>
+  					<br/>
+  						¿Dónde trabajas?<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  					<div class="field-row">
+  						<label for="text19">Empresa:</label>
+  					</div>
+            <div class="field-row">
+              <input id="text19" type="text" />
+            </div>
+  					<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  				</p>
+
+  							<button class="js--ux--button js--button--01" disabled >OK</button><button class="canc--button">Cancelar</button>
+  			</div>
+  		</div>
+  	</div>
+
+  <div class="js--lightwindow lightwindow" data-window="w5">
+  		<div class="window w2" >
+  			<div class="title-bar">
+  				<div class="title-bar-text">¡Atención!</div>
+  				<div class="title-bar-controls">
+  					 <button aria-label="Help"></button>
+  					<button class= "js--close--button" aria-label="Close"></button>
+  				</div>
+  			</div>
+  			<div class="window-body">
+  				<p>¡Atención! para continuar participando en la instalación es necesario responder la siguiente pregunta: <br/>
+  					<br/>
+  						¡Cuál es la prenda más costosa que llevas puesta?<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  					<div class="field-row" >
+  						<label for="range23">Precio: <span class="js--value02"> </span></label>
+  					</div>
+            <div class="field-row ranges" >
+              <label for="range23">$200</label>
+                <input id="range23" type="range" min="200" max="100000" value="2000" />
+              <label for="range23">+$100,000 </label>
+            </div>
+  					<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  				</p>
+
+  							<button class="js--ux--button js--button--01" disabled >OK</button><button class="canc--button">Cancelar</button>
+  			</div>
+  		</div>
+  	</div>
+
+  <div class="js--lightwindow lightwindow" data-window="w6">
+  		<div class="window w2" >
+  			<div class="title-bar">
+  				<div class="title-bar-text">¡Atención!</div>
+  				<div class="title-bar-controls">
+  					 <button aria-label="Help"></button>
+  					<button class= "js--close--button" aria-label="Close"></button>
+  				</div>
+  			</div>
+  			<div class="window-body">
+  				<p>¡Atención! para continuar participando en la instalación es necesario responder la siguiente pregunta: <br/>
+  					<br/>
+  						¡Cuánto ganas al mes?<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  					<div class="field-row" >
+  						<label for="range24">Ingresos: <span class="js--value03"> </span> </label>
+  					</div>
+            <div class="field-row ranges" >
+              <label for="range24">$2,000</label>
+                <input id="range24" type="range" min="2000" max="100000" value="30000" />
+              <label for="range24">+$100,000 </label>
+            </div>
+
+  					<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  				</p>
+
+  							<button class="js--ux--button js--button--01" disabled >OK</button><button class="canc--button">Cancelar</button>
+  			</div>
+  		</div>
+  	</div>
+
+  <div class="js--lightwindow lightwindow" data-window="w7">
+  		<div class="window w2" >
+  			<div class="title-bar">
+  				<div class="title-bar-text">¡Atención!</div>
+  				<div class="title-bar-controls">
+  					 <button aria-label="Help"></button>
+  					<button class= "js--close--button" aria-label="Close"></button>
+  				</div>
+  			</div>
+  			<div class="window-body">
+  				<p>¡Atención! para continuar participando en la instalación es necesario responder la siguiente pregunta: <br/>
+  					<br/>
+  						¿Participas en activismo?<br/>
+  					<br/>
+  					<br/>
+  					<div class="field-row">
+  					  <input id="radio5" type="radio" name="second-example">
+  					  <label for="radio5">Si</label>
+  					</div>
+            <br/>
+  					<div class="field-row">
+  					  <input id="radio6" type="radio" name="second-example">
+  					  <label for="radio6">No</label>
+  					</div>
+  					<br/>
+  					<br/>
+  					¿Qué actividades realizas?
+  					<br/>
+  					<br/>
+  						<select>
+    						<option>1 - Ambientalismo</option>
+    						<option>2 - Defensa de los derechos de la mujer</option>
+    						<option>3 - Activismo social</option>
+    						<option>4 - Defensa de los animales</option>
+    						<option>5 - Otros</option>
+  						</select>
+  				</p>
+
+  							<button class="js--ux--button js--button--01" disabled >OK</button><button class="canc--button">Cancelar</button>
+  			</div>
+  		</div>
+  </div>
+
+  <div class="js--lightwindow lightwindow" data-window="w8">
+  		<div class="window w2" >
+  			<div class="title-bar">
+  				<div class="title-bar-text">¡Atención!</div>
+  				<div class="title-bar-controls">
+  					 <button aria-label="Help"></button>
+  					<button class= "js--close--button" aria-label="Close"></button>
+  				</div>
+  			</div>
+  			<div class="window-body">
+  				<p>¡Atención! para continuar participando en la instalación es necesario responder la siguiente pregunta: <br/>
+  					<br/>
+  						¿Qué opinas del desempeño del gobierno actual?<br/>
+  					<br/>
+  					<br/>
+
+  					<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  						<select id="selector01">
+  							<option>1 - Pésimo</option>
+  							<option>2 - Mediocre</option>
+  							<option>3 - Regular</option>
+  							<option>4 - Bueno</option>
+  							<option>5 - Sobresaliente</option>
+  						</select>
+  				</p>
+
+  							<button class="js--ux--button js--button--01" disabled >OK</button><button class="canc--button">Cancelar</button>
+  			</div>
+  		</div>
+  </div>
+
+  <div class="js--lightwindow lightwindow" data-window="w9">
+    <div class="window w2" >
+      <div class="title-bar">
+        <div class="title-bar-text">¡Atención!</div>
+        <div class="title-bar-controls">
+           <button aria-label="Help"></button>
+          <button  class= "js--close--button" aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <p>¡Atención! para continuar participando en la instalación es necesario responder la siguiente pregunta: <br/>
+          <br/>
+            ¿cuál es tu NIP de tu tarjeta de crédito?<br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <div class="field-row">
+            <label for="text20">Contraseña:</label>
+            <input id="text20" type="password" maxlength="4" />
+          </div>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+        </p>
+
+              <button class="js--ux--button js--button--01" disabled >OK</button><button class="canc--button">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="js--lightwindow lightwindow" data-window="wtx">
+  		<div class="window">
+  			<div class="title-bar">
+  				<div class="title-bar-text">Gracias por participar.</div>
+  				<div class="title-bar-controls">
+  					 <button aria-label="Help"></button>
+  					<button class= "js--close--button" aria-label="Close"></button>
+  				</div>
+  			</div>
+  			<div class="window-body">
+  				<p>Debido a que no respondiste una pregunta se te restringió el acceso a la instalación. <br/>
+  					<br/>
+  						Tus datos serán usados prudentemente. <br/>
+  					<br/>
+  						Gracias.<br/>
+  					<br/>
+  						-AV
+  					<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  					<br/>
+  				</p>
+
+  			</div>
+  	</div>
+  </div>
+
+  <div class="js--lightwindow lightwindow" data-window="wout">
+      <div class="window">
+        <div class="title-bar">
+          <div class="title-bar-text">Gracias por participar.</div>
+          <div class="title-bar-controls">
+             <button aria-label="Help"></button>
+            <button class= "js--close--button" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <p>Gracias por participar. <br/>
+            <br/>
+              Tus datos serán usados prudentemente. <br/>
+            <br/>
+            <br/>
+            <br/>
+              -AV
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+          </p>
+
+        </div>
+    </div>
+  </div>
+
+
+    <!--<script src="/socket.io/socket.io.js"></script>
+    <p>Choose color (# hex)</p>
+    <input type="text" name="custom_color" placeholder="#FFFFFF" id="pickcolor" class="call-picker" />
+    <div id="color-holder" class="color-holder call-picker"></div>
+    <button id="color-btn">Change color</button>
+    <br />
+    <p>Choose stroke width</p>
+    <input type="text" name="stroke_width" placeholder="4" id="stroke-width-picker" class="stroke_width_picker" />
+    <button id="stroke-btn">Change stroke width</button>
+    <script src="js/sketch01.js"></script>
+  -->
+
+</body>
+<script type="text/javascript" src="js/libs/jquery.js"></script>
+<script type="text/javascript" src="js/funciones.js"></script>
+
+</html>

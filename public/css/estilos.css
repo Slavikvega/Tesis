@@ -1,0 +1,151 @@
+/*
+Comentario
+de varias líneas
+*/
+
+body {
+	background: #ece9d8;
+	font-family: Tahoma;
+}
+body.roman {
+	font-family: "Times", serif;
+}
+
+p {
+
+}
+
+
+
+
+
+
+.window{
+	margin: auto;
+	width: 90%;
+}
+.title-bar-text{
+	font-size: 20px;
+}
+.window-body{
+	font-size: 24px;
+	font-weight: bold;
+}
+.field-row{
+	margin: auto;
+	font-size: 18px;
+}
+
+.w1{
+	background: #ece9d8;
+}
+
+.js--btn--intro{
+	margin-left: auto;
+	margin-right: 0;
+	font-size: 20px;
+
+}
+.js--ux--button{
+	margin-left: auto;
+	margin-right: 0;
+	font-size: 20px;
+
+}
+.canc--button{
+	margin-left: auto;
+	margin-right: 0;
+	font-size: 20px;
+
+}
+
+.lightwindow {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	height: 100%;
+	z-index: 3;
+
+	background: #ece9d8;
+	overflow: hidden;
+	max-width: 0%;
+}
+
+.lightwindow[data-window="wux"]{
+	z-index: 0;
+}
+
+
+.lightwindow.visible {
+	max-width: 100%;
+}
+
+
+.lightwindow__contenedor {
+
+}
+
+.title-bar, .window, button, input, label, option, select, textarea, ul.tree-view{
+	font-size: 18px;
+}
+
+.anuncios{
+	position: fixed;
+	z-index: 2;
+	opacity:0;
+
+}
+.anuncios.visibleAdd {
+	opacity: 1.0;
+}
+
+#text17{
+
+	font-size: 20px;
+}
+
+#radio5{
+	margin: auto;
+	font-size: 16px;
+}
+#radio6{
+	margin: auto;
+	font-size: 16px;
+}
+
+#js--ux canvas{
+	position: relative !important;
+	visibility: visible !important;
+	width: 100% !important;
+	height: 50vh !importan50
+	left: 0 !important;
+	top: 0 !important;
+}
+
+#anu00{
+	width: 40%;
+	top: 10%;
+	left: 50%;
+}
+#anu01{
+	width: 40%;
+	top: 40%;
+	left: 30%;
+}
+#anu02{
+	width: 60%;
+	top: 80%;
+	left: 20%;
+}
+#anu03{
+	width: 80%;
+	top: 5%;
+	left: 10%;
+
+}
+#anu04{
+	width: 60%;
+	top: 60%;
+	left: 5%;
+}
