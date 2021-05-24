@@ -11,7 +11,7 @@ function styles_p() {
 	estilos.btn_ux = $(".js--ux--button");
 	estilos.windows  = $("d")
 	estilos.body = $("body");
-	estilos.audio = document.querySelector(".js--audio");
+	estilos.audio01 = document.querySelector("#audio01");
 	estilos.counter = 0;
 	estilos.counterAdd = 0;
 
@@ -48,6 +48,7 @@ function styles_p() {
 	estilos.btn_ux.click(function () {
 			estilos.lightwindow =	$(".js--lightwindow[data-window='w" + estilos.counter + "']");
 			estilos.lightwindow.removeClass("visible");
+			document.getElementById("audio01").play();
 			estilos.inputButtonOk01.prop("disabled", true);
 			estilos.lightwindow_ux =	$(".js--lightwindow[data-window='wux']");
 			estilos.lightwindow_ux.addClass("visible");
@@ -60,19 +61,21 @@ function styles_p() {
 				estilos.counter ++;
 				estilos.lightwindow =	$(".js--lightwindow[data-window='w" + estilos.counter +  "']");
 				estilos.lightwindow.addClass("visible");
-		}, 1000);
+				document.getElementById("audio02").play();
+		}, 10000);
 	});
 
 //cambio intro a WUX
 	estilos.btn_inicio.click(function () {
 			estilos.lightwindow_intro =	$(".js--lightwindow[data-window='wintro']");
 			estilos.lightwindow_intro.removeClass("visible");
+			document.getElementById("audio01").play();
 			estilos.lightwindow_ux =	$(".js--lightwindow[data-window='wux']");
 			estilos.lightwindow_ux.addClass("visible");
 		setTimeout(function () {
 				estilos.lightwindow =	$(".js--lightwindow[data-window='w0']");
 				estilos.lightwindow.addClass("visible");
-		}, 1000);
+		}, 10000);
 		// estilos.lightwindow.addClass("visible");
 		//estilos.audio.play();
 		// estilos.titulo.addClass("dark");
@@ -83,19 +86,23 @@ function styles_p() {
 	estilos.btn_canc.click(function () {
 		estilos.lightwindow_intro =	$(".js--lightwindow[data-window='wintro']");
 		estilos.lightwindow_intro.removeClass("visible");
+		document.getElementById("audio01").play();
 		setTimeout(function () {
 		//	estilos.lightwindow =	$(".js--lightwindow[data-window='w" + estilos.counter +  "']");
 			estilos.lightwindow =	$(".js--lightwindow[data-window='wtx']");
 			estilos.lightwindow.addClass("visible");
+			document.getElementById("audio03").play();
 		}, 2000);
 	});
 //cancelar e ir a outro
 	estilos.close.click(function () {
 		estilos.lightwindow_intro =	$(".js--lightwindow[data-window='wintro']");
 		estilos.lightwindow_intro.removeClass("visible");
+		document.getElementById("audio01").play();
 		setTimeout(function () {
 			estilos.lightwindow =	$(".js--lightwindow[data-window='wout']");
 			estilos.lightwindow.addClass("visible");
+			document.getElementById("audio03").play();
 		}, 500);
 	});
 
