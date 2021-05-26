@@ -3,7 +3,7 @@ env: flex
 
 
 manual_scaling:
-  instances: 1
+  instances: 5
 resources:
   cpu: 1
   memory_gb: 0.5
