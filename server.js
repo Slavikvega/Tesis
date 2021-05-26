@@ -3,7 +3,7 @@ var path = require('path');
 var app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
-var port = 8080;
+var port = process.env.PORT || 8080;
 var clients = io.sockets.clients();
 
 app.use(express.static(path.join(__dirname, 'public')));
